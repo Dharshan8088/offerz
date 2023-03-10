@@ -38,15 +38,15 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/' className='nav-links' onClick={()=>{window.scroll({top:10,behavior:'auto'}); console.log('Called the function')}}>
                 Home
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                to='/services'
+                to='/'
                 className='nav-links'
-                onClick={closeMobileMenu}
+                onClick={()=>{window.scroll({top:2050,behavior:'auto'}); console.log('Called the function')}}
               >
                 About
               </Link>
